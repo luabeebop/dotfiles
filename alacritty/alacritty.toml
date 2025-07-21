@@ -1,0 +1,103 @@
+# ========= Window Settings =========
+[window]
+opacity = 0.7
+decorations = "Buttonless"
+dynamic_padding = true
+startup_mode = "Maximized"
+title = "Alacritty"
+padding = { x = 10, y = 10 }
+dynamic_title = true
+
+# ========= Font Settings =========
+[font]
+size = 14.0
+builtin_box_drawing = true
+
+[font.normal]
+family = "FiraCode Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "FiraCode Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "FiraCode Nerd Font"
+style = "Medium"
+
+[font.offset]
+x = 0
+y = 1
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+# ========= Cursor Settings =========
+[cursor]
+style = { shape = "Beam", blinking = "Always" }
+blink_interval = 500
+thickness = 0.15
+unfocused_hollow = true
+
+# ========= Shell =========
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-l"]
+
+# ========= Colors (Custom Red & Black Theme) =========
+[colors.primary]
+background = "#0f0f0f"     # Very dark black
+foreground = "#ffffff"     # Bright red
+
+[colors.normal]
+black = "#1a1a1a"
+red = "#ff4b4b"
+green = "#4bff4b"
+yellow = "#ffcc00"
+blue = "#4b7bff"
+magenta = "#ff4bcc"
+cyan = "#4bffff"
+white = "#f0f0f0"
+
+[colors.bright]
+black = "#2a2a2a"
+red = "#ff6666"
+green = "#66ff66"
+yellow = "#ffe066"
+blue = "#668cff"
+magenta = "#ff66d9"
+cyan = "#66ffff"
+white = "#ffffff"
+
+[colors.selection]
+text = "CellForeground"
+background = "#262626"
+
+# ========= Bell =========
+[bell]
+animation = "EaseOutExpo"
+duration = 150
+color = "#ff4b4b"
+
+# ========= Mouse =========
+[mouse]
+hide_when_typing = true
+bindings = []
+
+# ========= Key Bindings =========
+[[keyboard.bindings]]
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Control|Shift"
+action = "Copy"
+
+# ========= Scrollback =========
+[scrolling]
+history = 10000
+multiplier = 3
+
