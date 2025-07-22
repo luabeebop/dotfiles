@@ -2,6 +2,7 @@ dotfiles.bak
 
 alacritty->alacritty.toml
 config_i3->config
+i3blocks->config
 picom->picom.conf
 zshrc
 
